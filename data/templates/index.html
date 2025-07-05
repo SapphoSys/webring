@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./font.css" />
+  <link rel="stylesheet" href="./code.css" />
+  <link rel="icon" href="./icon.png" type="image/x-icon" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ ring_name }}</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="./icon.png" alt="Sapphic Webring Icon" width="40" height="40" />
+      <h1>{{ ring_name }}</h1>
+    </div>
+
+    <p id="description">{{ ring_description }}</p>
+    <p id="number">There are currently {{ number_of_sites }} sites in the ring.</p>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th class="wide">URL</th>
+            <th class="desc-col">Description</th>
+            <th class="narrow">Owner</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          {% for site in sites %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ site.website.name | safe }}</td>
+            <td>
+              <a href="{{ site.website.url | safe }}">{{ site.website.url | safe }}</a> 
+              {% if site.website.rss %}<a href="{{ site.website.rss }}">[rss]</a>{% endif %}
+            </td>
+            <td class="desc-col">{{ site.website.about | safe }}</td>
+            <td class="narrow">
+              {% if site.website.owner %}<span class="owner-email">{{ site.website.owner | safe }}</span>
+              {% else %}N/A{% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <h2>How do I join?</h2>
+    <p>Requests are approved on a case-by-case basis. If we know you, or are mutuals, in most cases you will be automatically accepted. You're still free to request, though!</p>
+
+    <h3>Instructions:</h3>
+    <ol>
+      <li>Choose a slug for your website. This will uniquely identify you.</li>
+      <li>Create a pull request on <a href="https://github.com/SapphoSys/webring">GitHub</a> with the following information:</li>
+      <pre class="json-example">{
+  <span class="json-key">"name"</span>: <span class="json-string">"your name"</span>,
+  <span class="json-key">"slug"</span>: <span class="json-string">"your slug"</span>,
+  <span class="json-key">"about"</span>: <span class="json-string">"A short description of you or your website."</span>,
+  <span class="json-key">"url"</span>: <span class="json-string">"https://your.website"</span>,
+  <span class="json-key">"rss"</span>: <span class="json-string">"https://your.website/rss"</span>, <span class="json-comment">// This step is optional.</span>
+  <span class="json-key">"owner"</span>: <span class="json-string">"your.email@example.com"</span>
+}</pre>
+      <li>Wait for your request to be approved. You will receive a notification on GitHub.</li>
+      <li>Once approved, add the webring to your website by using the following links:</li>
+        <pre class="html-example"><span class="html-tag">&lt;a</span> <span class="html-attr">href</span>=<span class="html-string">"https://ring.sapphic.moe/your-slug/previous"</span><span class="html-tag">&gt;</span>←<span class="html-tag">&lt;/a&gt;</span>
+<span class="html-tag">&lt;a</span> <span class="html-attr">href</span>=<span class="html-string">"https://ring.sapphic.moe"</span><span class="html-tag">&gt;</span>Sapphic Webring<span class="html-tag">&lt;/a&gt;</span>
+<span class="html-tag">&lt;a</span> <span class="html-attr">href</span>=<span class="html-string">"https://ring.sapphic.moe/your-slug/next"</span><span class="html-tag">&gt;</span>→<span class="html-tag">&lt;/a&gt;</span></pre>
+    </ol>
+    
+      <p>If your request is not approved within 3 days, please visit our <a href="https://sapphic.moe/contact">contact page</a>.</p>
+      <p>Since this is our webring, we reserve the right to reject any request for any reason we see fit.</p>
+
+    <hr />
+    <footer>
+      <p>
+        Add all sites with declared RSS feeds to your feed reader with this
+        <a href="{{ opml }}">OPML</a> link.
+      </p>
+      <p>Last updated {{ current_time }} (UTC+5, Asia/Almaty)</p>
+      <p>
+        Powered by <a href="https://github.com/k3rs3d/ringfairy" target="_blank">ringfairy</a>!
+      </p>
+
+			<p>
+				Webring managed by <a href="https://sapphic.moe">Sapphic Angels</a>.
+			</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sapphic Angels",
+    "slug": "sapphic",
+    "about": "Full time bunnies, part time software engineers, sysadmins, and frontend developers who have a knack for pieces of technology.",
+    "url": "https://sapphic.moe",
+    "rss": "https://sapphic.moe/rss.xml",
+    "owner": "contact@sapphic.moe"
+  },
+  {
+    "name": "Alyxia Sother",
+    "slug": "alyxia",
+    "about": "Hi, I'm Alyxia! I'm a software engineer with a knack for breaking and using things in unintended ways :)󠁛󠀣󠀵󠁆󠀰󠀱󠁅󠁂󠀬󠀣󠁆󠀹󠀶󠁃󠁅󠁆󠁝",
+    "url": "https://alyxia.dev",
+    "rss": "https://alyxia.dev/blog/feed.xml",
+    "owner": "alyxia@riseup.net"
+  },
+  {
+    "name": "Basil",
+    "slug": "basil",
+    "about": "I’m a catgirl masquerading as a full-stack developer, and I love making things on the web.",
+    "url": "https://basil.cafe",
+    "rss": "https://basil.cafe/feeds/posts.xml",
+    "owner": "basil@basil.cafe"
+  }
+]

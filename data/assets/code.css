@@ -1,0 +1,78 @@
+pre.json-example {
+  display: block;
+  background: #23272e;
+  color: #e6e6e6;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 1em;
+  line-height: 1.5;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  white-space: pre;
+}
+pre.json-example .json-key {
+  color: #7ec699;
+}
+pre.json-example .json-string {
+  color: #d19a66;
+}
+pre.json-example .json-comment {
+  color: #5c6370;
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+  pre.json-example {
+    background: #181825;
+    color: #cdd6f4;
+  }
+  pre.json-example .json-key {
+    color: #a6e3a1;
+  }
+  pre.json-example .json-string {
+    color: #fab387;
+  }
+  pre.json-example .json-comment {
+    color: #6c7086;
+  }
+}
+
+pre.html-example {
+  display: block;
+  background: #23272e;
+  color: #e6e6e6;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 1em;
+  line-height: 1.5;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  white-space: pre;
+}
+pre.html-example .html-tag {
+  color: #7ec699;
+}
+pre.html-example .html-attr {
+  color: #d19a66;
+}
+pre.html-example .html-string {
+  color: #e5c07b;
+}
+
+@media (prefers-color-scheme: dark) {
+  pre.html-example {
+    background: #181825;
+    color: #cdd6f4;
+  }
+  pre.html-example .html-tag {
+    color: #a6e3a1;
+  }
+  pre.html-example .html-attr {
+    color: #fab387;
+  }
+  pre.html-example .html-string {
+    color: #f9e2af;
+  }
+}
