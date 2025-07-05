@@ -31,6 +31,6 @@ Requests are approved on a case-by-case basis. If we know you, or are mutuals, i
 Since this is our webring, we reserve the right to reject any request for any reason we see fit.
 
 ## License
-[ringfairy](https://github.com/k3rs3d/ringfairy) is licensed the [GNU General Public License v3.0](LICENSE) license.
+[ringfairy](https://github.com/k3rs3d/ringfairy) is licensed under the [GNU General Public License v3.0](LICENSE) license.
 
 Copyright © 2016-2025 Sapphic Angels.
