@@ -1,18 +1,15 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="0; url={{ url }}">
     <title>Redirecting...</title>
-	
-	<style>
-		body {
-		  background-color: #000;
-		  color: #fff;
-		}
-	</style>
-</head>
-<body>
-    <p>A fairy is teleporting you to <a href="{{ url }}">{{ url }}</a>...!</p>
-</body>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../font.css" />
+  </head>
+
+  <body>
+    <h1>Redirecting...</h1>
+    <p>A fairy is teleporting you to <a class="redirect-link" href="{{ url }}">{{ url }}</a>...</p>
+  </body>
 </html>
