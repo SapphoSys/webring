@@ -4,20 +4,22 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build:
-    name: Build webring and push to GitHub Pages
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Nix
+      - name: Install nix
         uses: DeterminateSystems/nix-installer-action@main
+        with:
+          logger: pretty
 
       - name: Build
-        run: nix develop --command "ringfairy"
+        run: nix develop --accept-flake-config --command "ringfairy"
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3

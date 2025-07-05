@@ -16,9 +16,41 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 315532800,
+        "narHash": "sha256-42SFxUaGoNR5BQsnKO7y20UdNb/i/EZT/alOsHFHRao=",
+        "rev": "c860cf0b3a0829f0f6cf344ca8de83a2bbfab428",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre824823.c860cf0b3a08/nixexprs.tar.xz?rev=c860cf0b3a0829f0f6cf344ca8de83a2bbfab428"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "tgirlpkgs": "tgirlpkgs"
+      }
+    },
+    "tgirlpkgs": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1751676348,
+        "narHash": "sha256-7VSMJSaadkm6ifZa/a6NrUM8kj4CC08Aif+5rLeZy6s=",
+        "owner": "tgirlcloud",
+        "repo": "pkgs",
+        "rev": "6e7f0d544495e8d852171c8dcc540c0b35ad8c2d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tgirlcloud",
+        "repo": "pkgs",
+        "type": "github"
       }
     }
   },

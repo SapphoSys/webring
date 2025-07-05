@@ -1,14 +1,14 @@
 {
-  description = "A Nix flake for the Ringfairy project.";
-
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    tgirlpkgs.url = "github:tgirlcloud/pkgs";
   };
 
   outputs =
     {
       self,
       nixpkgs,
+      tgirlpkgs,
     }:
     let
       forAllSystems =
@@ -19,11 +19,17 @@
     in
     {
       devShells = forAllSystems (pkgs: {
-        default = pkgs.mkShell {
+        default = pkgs.mkShellNoCC {
           packages = [
-            (pkgs.callPackage ./ringfairy.nix { })
+            tgirlpkgs.packages.${pkgs.stdenv.hostPlatform.system}.ringfairy
+            pkgs.simple-http-server
           ];
         };
       });
     };
+
+  nixConfig = {
+    extra-substituters = [ "https://cache.tgirl.cloud/tgirlcloud" ];
+    extra-trusted-public-keys = [ "tgirlcloud:vcV9oxS9pLXyeu1dVnBabLalLlw0yJzu6PakQM372t0=" ];
+  };
 }
