@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./font.css" />
-  <link rel="stylesheet" href="./code.css" />
-  <link rel="icon" href="./icon.png" type="image/x-icon" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>{{ ring_name }}</title>
+    
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="stylesheet" href="./code.css" />
+    <link rel="icon" href="./icon.png" type="image/x-icon" />
+
+    <meta property="og:title" content="{{ ring_name }}" />
+    <meta property="og:description" content="{{ ring_description }}" />
+    <meta property="og:image" content="./icon.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ ring_name }}" />
+    <meta name="twitter:description" content="{{ ring_description }}" />
+    <meta name="twitter:image" content="./icon.png" />
+
+    <meta property="theme-color" content="#f5c2e7" />
+
+    <meta name="description" content="{{ ring_description }}" />
   </head>
 
   <body>
