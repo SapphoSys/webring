@@ -32,6 +32,14 @@
     "owner": "robin@isabelroses.com"
   },
   {
+    "name": "isabel roses",
+    "slug": "isabelroses",
+    "about": "i'm a nix obssessive who occationally writes in real coding langauages",
+    "url": "https://isabelroses.com",
+    "rss": "https://isabelroses.com/feed.xml",
+    "owner": "isabel@isabelroses.com"
+  },
+  {
     "name": "ziad87",
     "slug": "ziad87",
     "about": "I do a little computing on the interweb, particularly network shenanigans",
