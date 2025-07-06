@@ -22,5 +22,13 @@
     "url": "https://basil.cafe",
     "rss": "https://basil.cafe/feeds/posts.xml",
     "owner": "basil@basil.cafe"
+  },
+  {
+    "name": "Robin",
+    "slug": "comfysage",
+    "about": "wandering through code, coffee and enchanted forests (i make cozy software).",
+    "url": "https://robinroses.xyz",
+    "rss": "https://robinroses.xyz/feed.xml",
+    "owner": "robin@isabelroses.com"
   }
 ]
