@@ -45,5 +45,13 @@
     "about": "I do a little computing on the interweb, particularly network shenanigans",
     "url": "https://ziad87.net",
     "owner": "ziad@ziad87.net"
+  },
+  {
+    "name": "lost dusty",
+    "slug": "ld",
+    "about": "the dusty one who loves dacing on the rainy moonlight. i love modding, writing and computers in general.",
+    "url": "https://lostdusty.dev.br",
+    "rss": "https://lostdusty.dev.br/feed.xml",
+    "owner": "princessmortix@proton.me"
   }
 ]
