@@ -45,5 +45,13 @@
     "about": "I do a little computing on the interweb, particularly network shenanigans",
     "url": "https://ziad87.net",
     "owner": "ziad@ziad87.net"
-  }
+  },
+  {
+  "name": "ArgentumCation",
+  "slug": "argentumcation",
+  "about": "Intermittent meanderings from the Witch of Jank, also sometimes I make art and music too",
+  "url": "https://argentumcation.com",
+  "rss": "https://argentumcation.com/index.xml",
+  "owner": "mira@argentumcation.com"
+}
 ]
