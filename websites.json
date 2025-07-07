@@ -45,5 +45,12 @@
     "about": "I do a little computing on the interweb, particularly network shenanigans",
     "url": "https://ziad87.net",
     "owner": "ziad@ziad87.net"
+  },
+  {
+    "name": "meow_d",
+    "slug": "meow-d",
+    "about": "aspiring catgirl",
+    "url": "https://meow-d.github.io",
+    "owner": "meow_d@tuta.io"
   }
 ]
