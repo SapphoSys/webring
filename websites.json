@@ -45,5 +45,13 @@
     "about": "I do a little computing on the interweb, particularly network shenanigans",
     "url": "https://ziad87.net",
     "owner": "ziad@ziad87.net"
+  },
+  {
+    "slug": "Shuga",
+    "name": "shuga",
+    "about": "Hi, I'm Shuga! I secure things, make things, and dabble in graphic design.",
+    "url": "https://shuga.co",
+    "rss": "https://shuga.co/feed.xml",
+    "owner": "sapphic_webring_contact@shuga.co"
   }
 ]
