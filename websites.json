@@ -51,7 +51,7 @@
     "slug": "aria-coffee",
     "about": "A coffee addicxted robot occasionally casting spells",
     "url": "https://aria.coffee",
-    "rss": "https://aria.coffee/rss.xml", // This step is optional.
+    "rss": "https://aria.coffee/rss.xml",
     "owner": "hello@aria.coffee"
   }
 ]
