@@ -46,6 +46,7 @@
     "url": "https://ziad87.net",
     "owner": "ziad@ziad87.net"
   },
+  {
     "name": "lost dusty",
     "slug": "ld",
     "about": "the dusty one who loves dacing on the rainy moonlight. i love modding, writing and computers in general.",
@@ -60,5 +61,12 @@
     "url": "https://argentumcation.com",
     "rss": "https://argentumcation.com/index.xml",
     "owner": "mira@argentumcation.com"
+  },
+  {
+    "name": "Rez (me please)",
+    "slug": "rez",
+    "about": "A girl for a shell and a bundle of impulses for a brain :3c",
+    "url": "https://rez.bio",
+    "owner": "rezmeuwu@gmail.com"
   }
 ]
