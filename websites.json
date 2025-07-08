@@ -75,5 +75,13 @@
     "about": "aspiring catgirl",
     "url": "https://meow-d.github.io",
     "owner": "meow_d@tuta.io"
+  },
+  {
+    "slug": "Shuga",
+    "name": "shuga",
+    "about": "Hi, I'm Shuga! I secure things, make things, and dabble in graphic design.",
+    "url": "https://shuga.co",
+    "rss": "https://shuga.co/feed.xml",
+    "owner": "sapphic_webring_contact@shuga.co"
   }
 ]
